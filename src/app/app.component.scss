@@ -1,0 +1,29 @@
+body{
+
+    header {
+        padding: 30px;
+        text-align: center;
+        color: rgb(41, 64, 29);
+        font-size: 30px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        height: 100%;
+        width:100%;
+
+       button{
+            background-color: brown;
+            border-radius: 2px;
+            padding: 0 30px;
+            margin: 0 25px;
+            font-family: 'Times New Roman', Times, serif;
+            box-shadow: 3px;
+            cursor: pointer;  
+        }
+
+    }
+}
+  
+  
