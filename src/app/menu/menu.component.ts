@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 
-type menu=[
-  name:string,
-]
+ type menu={
+  name:string
+ };
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -10,15 +11,17 @@ type menu=[
 })
 export class MenuComponent {
 
-  public menus=[
-    {
-      name:"dishes",
-    },
-    {
-      name:"sweets",
-    },
-    {
-      name:"drinks",
-    }
-  ]
+public menus=[
+  {
+    name:"dishes"
+  },
+  {
+    name:"desserts"
+  },
+  {
+    name:"maincourse"
+  }
+];
+
+
 }

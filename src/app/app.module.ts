@@ -1,26 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { Route, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
 const route:Routes=[
   {
     path:'about',
-    loadChildren:() => import('./about/about.module').then(m => m.AboutModule)
+    loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
   },
   {
     path:'register',
-    loadChildren:() => import('./register/register.module').then(m => m.RegisterModule)
+    loadChildren: () => import('./register/register.module').then(m => m.RegisterModule)
   },
   {
     path:'login',
-    loadChildren:() => import('./login/login.module').then(m => m.LoginModule)
+    loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
   },
   {
     path:'menu',
-    loadChildren:() => import('./menu/menu.module').then(m => m.MenuModule)
-  },
+    loadChildren: () => import('./menu/menu.module').then(m => m.MenuModule)
+  }
 ]
 
 @NgModule({
@@ -29,7 +29,7 @@ const route:Routes=[
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(route)
+    RouterModule.forRoot(route),
   ],
   providers: [],
   bootstrap: [AppComponent]

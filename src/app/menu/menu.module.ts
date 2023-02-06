@@ -3,21 +3,18 @@ import { CommonModule } from '@angular/common';
 import { MenuComponent } from './menu.component';
 import { RouterModule, Routes } from '@angular/router';
 
-// localhost:4200/menu
-const route:Routes=[
+ const route:Routes=[
   {
     path:'',
     component:MenuComponent,
     loadChildren:() => import('../dishes/dishes.module').then(m => m.DishesModule)
-  },
-  
-]
+  }
+ ]
 
 @NgModule({
   declarations: [
-    MenuComponent,
+    MenuComponent
   ],
-
   imports: [
     CommonModule,
     RouterModule.forChild(route),

@@ -7,10 +7,15 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./dishes.component.scss']
 })
 export class DishesComponent {
-  
-  path!: string;
 
-  constructor(public activeRouter: ActivatedRoute) {
+  path!:string;
 
+  constructor(
+    public activeRouter:ActivatedRoute
+  ){
+    this.activeRouter.paramMap
+    .subscribe((data: any) => {
+        this.path = data.get('dish');
+    });
   }
 }

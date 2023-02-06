@@ -1,8 +1,5 @@
-     <div class="dishes"*ngFor="let menu of menus" [routerLink]="[menu.name]"> 
-        {{menu.name}}
-    </div>
-    <!-- <div> <button class="dishes" [routerLink]="[dishes]">Dishes</button> </div> -->
+<button class="dishes" *ngFor="let menu of menus" [routerLink]="[menu.name]">
+    {{menu.name}}
+</button>
 
-
-    
- <router-outlet></router-outlet>
+<router-outlet></router-outlet>
