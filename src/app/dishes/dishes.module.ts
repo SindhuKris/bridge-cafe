@@ -2,17 +2,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DishesComponent } from './dishes.component';
 import { RouterModule, Routes } from '@angular/router';
-
 const route:Routes=[
   {
-    path:':type',
+    path:':dish',
     component:DishesComponent
   },
   {
     path:'**',
-    redirectTo: 'dishes'
+    redirectTo:'dishes'
   }
 ]
+
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ const route:Routes=[
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(route)
+    RouterModule.forChild(route),
   ]
 })
 export class DishesModule { }
