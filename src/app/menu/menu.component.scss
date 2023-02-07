@@ -1,4 +1,21 @@
-.dishes{ 
-    border: 1px solid #cfcfcf;
-    cursor: pointer;
+h2{
+    display:flex;
+    flex-direction: row;
+    .dishes{
+        border: 1px solid #140606;
+        cursor: pointer;
+        background-color: rgb(13, 171, 52);
+        border-radius: 5px;
+        padding: 0 15px;
+        margin: 0 15px;
+        font-family: 'Times New Roman', Times, serif;
+        box-shadow: 5px;
+        cursor: pointer;
+        
+        &:hover{
+    
+            background-color:rgb(165, 118, 100);
+        }
+        
+    }
 }

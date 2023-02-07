@@ -10,6 +10,7 @@ const route:Routes=[
   }
 ]
 
+
 @NgModule({
   declarations: [
     AboutComponent
