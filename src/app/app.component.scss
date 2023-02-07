@@ -1,92 +1,94 @@
-body{
-        header{
-        font-size:30px;
-        color:rgb(2, 120, 81);
+
+header{
+    font-size:30px;
+    color:rgb(2, 120, 81);
+    text-align: center;
+}
+
+.nav-bar{
+    background-color: rgb(115, 243, 200);
+    list-style: none;
+    padding: 8px;
+    display:flex;
+    width: 100%;
+    height:150px;
+    float:left;
+    border:1px solid #000;
+    flex-direction: row;
+    
+
+    li{
+        margin:0 25px;
+        padding: 0 25px;
+        color: #000;
+        cursor: pointer;
         text-align: center;
-    }
-    .nav-bar{
-        background-color: rgb(115, 243, 200);
-        list-style: none;
-        padding: 8px;
-        display:block;
-        width: 100%;
-        height:150px;
-        float:left;
-        border:1px solid #000;
-        
-        li{
-            margin:0 25px;
+    
+
+        .about{
+            background-color: rgb(13, 171, 52);
+            border-radius: 10px;
             padding: 0 25px;
-            color: #000;
+            margin: 0 25px;
+            font-family: 'Times New Roman', Times, serif;
+            box-shadow: 5px;
             cursor: pointer;
-            text-align: center;
-
-            .about{
-                background-color: rgb(13, 171, 52);
-                border-radius: 10px;
-                padding: 0 25px;
-                margin: 0 25px;
-                font-family: 'Times New Roman', Times, serif;
-                box-shadow: 5px;
-                cursor: pointer;
-                
-                &:hover{
             
-                    background-color:rgb(165, 118, 100);
-                }
+            &:hover{
+        
+                background-color:rgb(165, 118, 100);
             }
+        }
 
-            .register{
-                background-color: rgb(13, 171, 52);
-                border-radius: 10px;
-                padding: 0 25px;
-                margin: 0 25px;
-                font-family: 'Times New Roman', Times, serif;
-                box-shadow: 5px;
-                cursor: pointer;
-                
-                &:hover{
+        .register{
+            background-color: rgb(13, 171, 52);
+            border-radius: 10px;
+            padding: 0 25px;
+            margin: 0 25px;
+            font-family: 'Times New Roman', Times, serif;
+            box-shadow: 5px;
+            cursor: pointer;
             
-                    background-color:rgb(165, 118, 100);
-                }
-
+            &:hover{
+        
+                background-color:rgb(165, 118, 100);
             }
-
-            .login{
-                background-color: rgb(13, 171, 52);
-                border-radius: 10px;
-                padding: 0 25px;
-                margin: 0 25px;
-                font-family: 'Times New Roman', Times, serif;
-                box-shadow: 5px;
-                cursor: pointer;
-                
-                &:hover{
-            
-                    background-color:rgb(165, 118, 100);
-                }
-
-            }
-
-            .menu{
-                background-color: rgb(13, 171, 52);
-                border-radius: 10px;
-                padding: 0 25px;
-                margin: 0 25px;
-                font-family: 'Times New Roman', Times, serif;
-                box-shadow: 5px;
-                cursor: pointer;
-                
-                &:hover{
-            
-                    background-color:rgb(165, 118, 100);
-                }
-                
-            }
-
-
 
         }
 
+        .login{
+            background-color: rgb(13, 171, 52);
+            border-radius: 10px;
+            padding: 0 25px;
+            margin: 0 25px;
+            font-family: 'Times New Roman', Times, serif;
+            box-shadow: 5px;
+            cursor: pointer;
+            
+            &:hover{
+        
+                background-color:rgb(165, 118, 100);
+            }
+
+        }
+
+        .menu{
+            background-color: rgb(13, 171, 52);
+            border-radius: 10px;
+            padding: 0 25px;
+            margin: 0 25px;
+            font-family: 'Times New Roman', Times, serif;
+            box-shadow: 5px;
+            cursor: pointer;
+            
+            &:hover{
+        
+                background-color:rgb(165, 118, 100);
+            }
+        }
+
     }
+
+
 }
+

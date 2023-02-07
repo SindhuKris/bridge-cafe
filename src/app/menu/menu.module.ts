@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { MenuComponent } from './menu.component';
 import { RouterModule, Routes } from '@angular/router';
 
- const route:Routes=[
+const route:Routes=[
   {
     path:'',
     component:MenuComponent,
-    loadChildren:() => import('../dishes/dishes.module').then(m => m.DishesModule)
+   loadChildren: () => import('./dishes/dishes.module').then(m => m.DishesModule)
   }
- ]
+]
 
 @NgModule({
   declarations: [
